@@ -139,11 +139,11 @@ function storeInputData(input,data){
   
 
 
-    let body = document.getElementById("master")
-    body.addEventListener("onload",
+//     let body = document.getElementById("master")
+//     body.addEventListener("onload",
 
-        getData()
-    )
+//         getData()
+//     )
 
 
 
