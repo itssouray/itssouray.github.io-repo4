@@ -7,7 +7,7 @@ The project is build using html, css and js. The focus of this project is to sho
 
 #working :-
 -------------
-when the user type or paste a valid url into the inpute element and click the button then a short 
+when the user type or paste a valid url into the input element and click the button then a short 
 link is generated which is further get stored to his local storage and from there the user will be able
 to access the shorted url.
 
