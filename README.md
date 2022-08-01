@@ -1,5 +1,8 @@
 # itssouray.github.io-repo4
-# the project is build using html, css and js. The focus of this project is to short a given link using an api.
+
+#About the project:-
+--------------------
+The project is build using html, css and js. The focus of this project is to short a given link using an api.
 
 
 #working :-
@@ -8,11 +11,11 @@ when the user type or paste a valid url into the inpute element and clicked the 
 link is generated which is further get stored to his local storage and from there the user will be able
 to access the shorted.
 
-API :-
+#API :-
 ----
 The api used in this project is shrtcode api (https://shrtco.de/docs/).
 
-DEMO
+#DEMO
 -----------
 visite below link ...
 
