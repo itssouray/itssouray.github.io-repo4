@@ -74,7 +74,7 @@ function createElements(input_value,data){
     link_container.appendChild(outer_div)
 
     //storing data on local storage--------------------
-    storeInputData(input_value,data)
+//     storeInputData(input_value,data)
 
     // console.log(data)
 }
@@ -84,55 +84,55 @@ function createElements(input_value,data){
 
 
 
-function storeInputData(input,data){
-    let arr = [{
-        inputValue : input,
-        shortedValue : data
-    }]
+// function storeInputData(input,data){
+//     let arr = [{
+//         inputValue : input,
+//         shortedValue : data
+//     }]
 
-   let key = Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0");
-   console.log(key)
-    //converting array into string using JSON.stringify() ------
-    window.localStorage.setItem(key,JSON.stringify(arr))  
+//    let key = Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0");
+//    console.log(key)
+//     //converting array into string using JSON.stringify() ------
+//     window.localStorage.setItem(key,JSON.stringify(arr))  
 
-}
+// }
 
 
-    // window.localStorage.clear()
+    window.localStorage.clear()
 
-    function restore(prevData){
+//     function restore(prevData){
           
-        let l = prevData.length
-        console.log(prevData)
+//         let l = prevData.length
+//         console.log(prevData)
 
-        for(let i=0;i<l;i++){
-          createElements(prevData[i][0].inputValue,prevData[i][0].shortedValue)
-        }
-  }
+//         for(let i=0;i<l;i++){
+//           createElements(prevData[i][0].inputValue,prevData[i][0].shortedValue)
+//         }
+//   }
 
 
     
-   function  getData(){
-        prevData='';
-        console.log("this is prev data : ",prevData)
+//    function  getData(){
+//         prevData='';
+//         console.log("this is prev data : ",prevData)
 
-        let obj=[]
-        let key=''
-        for(let i=0;i<10;i++){
-         key = window.localStorage.key(i)
-         let temp = window.localStorage.getItem(key)
-         if(temp!=null)
-         obj.push(JSON.parse(temp))
-        }
+//         let obj=[]
+//         let key=''
+//         for(let i=0;i<10;i++){
+//          key = window.localStorage.key(i)
+//          let temp = window.localStorage.getItem(key)
+//          if(temp!=null)
+//          obj.push(JSON.parse(temp))
+//         }
         
-        if(obj===null){
-            return ;
-        }
-        else{
-            prevData=obj
-            restore(prevData)
-        }
-    }
+//         if(obj===null){
+//             return ;
+//         }
+//         else{
+//             prevData=obj
+//             restore(prevData)
+//         }
+//     }
 
 
     // console.log(prevData[1][0])
